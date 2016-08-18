@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <link href="Content/site.css" rel="stylesheet">
+    <link href="Content/animate.css" rel="stylesheet">
+
+</head>
+<body onload="buscarProducto();">
+    <div class="container">
+        <h4>Productos</h4>
+        <div style="float:left">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <select class="form-control" name="Producto" id="producto">
+                            <option id="opcionproducto"></option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br />
+        <div class="">
+            <span class="label">cantidad</span>
+            <input type="text" class="form-control" placeholder="cantidad" id="cantidad">
+        </div>
+        <div class="">
+            <span class="label">cantidadminima</span>
+            <input type="text" class="form-control" placeholder="cantidad minima" id="cantidadminima">
+        </div>
+        <div class="">
+            <span class="label">cantidadmaxima</span>
+            <input type="text" class="form-control" placeholder="cantidad maxima" id="cantidadmaxima">
+        </div>
+        <div class="">
+            <span class="label">gravadoexcepto</span>
+            <input type="text" class="form-control" placeholder="gravado excepto" id="gravadoexcepto">
+        </div>
+        <br />
+        <button class="btn" onclick="guardarInventario();">Insertar</button>
+    </div>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+    <script src="Scripts/main.js"></script>
+</body>
+</html>

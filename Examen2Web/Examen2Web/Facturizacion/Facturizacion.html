@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Facturizacion</title>
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <link href="Content/site.css" rel="stylesheet">
+    <link href="Content/animate.css" rel="stylesheet">
+</head>
+<body onload="loadProductos();">
+    <div class="container">
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="exampleInputName2">Name</label>
+                <input type="text" class="form-control" id="nombrecliente" placeholder="Nombre">
+            </div>
+            <div class="form-group" style="margin-left:5%;">
+                <label for="exampleInputEmail2" id="total">Total:</label>
+            </div>
+            <div class="form-group" style="margin-left:5%;">
+                <label for="exampleInputEmail2" id="subtotal">Subtotal:</label>
+            </div>
+            <div class="form-group" style="margin-left:5%;">
+                <label for="exampleInputEmail2" id="impuestos">Impuestos:</label>
+            </div>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                        <th>Id</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Fecha</th>
+                        </thead>
+                        <tbody id="cuerpo">
+
+                        </tbody>
+                    </table>
+                    <select class="form-control" id="productos">
+                    </select>
+                    <button type="submit" class="btn btn-default" onclick="agregarProducto();">Agregar</button>
+                    <button type="submit" class="btn btn-default">Facturar</button>
+</form>
+    </div>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+    <script src="Scripts/main.js"></script>
+
+
+</body>
+</html>

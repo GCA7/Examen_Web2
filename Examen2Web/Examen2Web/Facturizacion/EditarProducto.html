@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet">
+    <link href="Content/site.css" rel="stylesheet">
+    <link href="Content/animate.css" rel="stylesheet">
+</head>
+<body onload="editarP();">
+    <div class="container">
+        <div class="row">
+            <h3>Registrar Usuario</h3>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="cedula">Cedula</label>
+                    <input type="text" class="form-control" id="cedula" placeholder="Cedula usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="Apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido usuario" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">date</label>
+                    <input type="date" class="form-control" id="fe_nacimiento" placeholder="Fecha de nacimiento" required>
+                </div>
+                <div class="form-group">
+                    <label for="dirección">Dirección</label>
+                    <input type="text" class="form-control" id="direccion" placeholder="Dirección" required>
+                </div>
+                <div class="form-group">
+                    <label for="Estado Civil">Estado Civil</label>
+                    <input type="text" class="form-control" id="estcivil" placeholder="Estado Civil" required>
+                </div>
+                <div class="form-group">
+                    <label for="Sexo">Sexo</label>
+                    <input type="text" class="form-control" id="sexo" placeholder="Sexo" required>
+                </div>
+                <div class="form-group">
+                    <label for="Ingreso">Ingreso</label>
+                    <input type="date" class="form-control" id="feingreso" placeholder="Fecha de ingreso" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipo">Tipo</label>
+                    <input type="text" class="form-control" id="type" placeholder="Tipo" required>
+                </div>
+                <div class="form-group">
+                    <label for="descuento">Descuento</label>
+                    <input type="text" class="form-control" id="descuento" placeholder="Descuento" required>
+                </div>
+                <button type="submit" onclick="registrarCliente();" class="btn btn-primary">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+    <script src="Scripts/main.js"></script>
+</body>
+</html>
